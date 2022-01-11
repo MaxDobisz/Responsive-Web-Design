@@ -1,0 +1,446 @@
+:root {
+    --color-alpha: rgb(170, 170, 170);
+    --color-beta: rgb(255, 255, 255);
+    --color-gamma: rgb(104, 104, 104);
+    --color-delta: rgb(55, 235, 237);
+    --color-epsilon: rgb(49, 49, 49);
+    --color-zeta: rgb(3, 130, 245);
+    --color-eta: rgb(90, 177, 255);
+    --color-theta: rgba(253,172,92,1);
+    --color-iota: rgba(253,143,94,1);
+    --color-kappa: rgb(55, 239, 141);
+    --color-lambda: rgba(106, 182, 251, 0.9);
+    --color-mu: rgb(255, 215, 0);
+    --color-nu: rgba(107, 102, 102, 0.1);
+    --color-xi: rgb(233, 244, 254);
+    --color-omikron: rgb(254, 244, 238);
+    --color-pi: rgb(232, 252, 241);
+    --color-rho: rgb(209, 207, 207);
+    --color-sigma: rgb(0, 0, 0);
+}
+
+body { 
+    color: var(--color-alpha);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+a, h2, button, .store__title, .review__title, .main-content__title, .review, .store, .fa-facebook, .fa-twitter ,.fa-instagram, .main-content {
+    color:var(--color-beta);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--color-gamma);
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+button {
+    background-color: var(--color-delta);
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    height: 50px;
+    letter-spacing: 1.5px;
+    margin: 30px 0 60px;
+    width: 200px;
+}
+
+.navigation,.main-content, .advantages, .features, .review, .price-plans, .applab , .footer {
+    padding: 15px;
+}
+
+.navigation {
+    align-items: center;
+    background-color: var(--color-epsilon);
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__list, .navigation__button, .navigation-desktop__logo {
+    display: none;
+}
+
+.navigation__hamburger {
+    border-bottom: solid var(--color-beta);
+    height: 20px;
+    position:relative;
+    width: 30px;
+}
+
+.navigation__hamburger::before,.navigation__hamburger::after  {
+    border-top: solid var(--color-beta);
+    content: "";
+    position: absolute;
+    width: 100%;
+}
+
+.navigation__hamburger::after {
+    transform: translateY(8.5px);
+}
+
+.main-content {
+    background-image: url(../images/banner/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-content__title {
+    text-align: start;
+}
+
+.main-content__phone {
+    display: block;
+    margin: 0 auto;
+}
+
+.icon__title {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
+
+.advantages {
+    color: var(--color-gamma);
+}
+
+.advantages__icon {
+    border-radius: 15px;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100px;
+}
+
+.advantages__icon--1 {
+    background: linear-gradient(90deg, var(--color-zeta), var(--color-eta));
+}
+
+.advantages__icon--2 {
+    background: linear-gradient(90deg, var(--color-theta), var(--color-iota));
+}
+
+.advantages__icon--3 {
+    background: var(--color-kappa);
+}
+
+.icon__title {
+    color: var(--color-alpha);
+}
+
+.icon__image {
+    width: 50%;
+}
+
+.advantages__logo-last {
+    margin-bottom: 50px;
+}
+
+.features__button {
+    background-color: var(--color-zeta);
+}
+
+.review {
+    background-size: cover;
+    background:linear-gradient(0deg, var(--color-lambda), var(--color-lambda)), url(../images/banner/testmonial.png);
+    text-align: center;
+    background-position: center;
+}
+
+.review__stars-row {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.fa-star {
+    color: var(--color-mu);
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+.price-plans__title, .price-plans__items  {
+    text-align: center;
+}
+
+.items__item {
+    align-items: center;
+    box-shadow: 0px 0px 30px var(--color-nu);
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+    row-gap: 25px;
+}
+
+.item__price-tag {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+.price-tag__item-bold {
+    font-weight: bold;
+}
+
+.price-tag__item-color-1 {
+    color: var(--color-zeta);
+}
+
+.price-tag__item-color-2 {
+    color: var(--color-iota);
+}
+
+.price-tag__item-color-3 {
+    color: var(--color-kappa);
+}
+
+.item__price-tag--1 {
+    background-color:var(--color-xi);
+}
+
+.item__price-tag--2 {
+    background-color:var(--color-omikron);
+}
+
+.item__price-tag--3 {
+    background-color:var(--color-pi);
+}
+
+.items__item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item__button {
+    background-color: var(--color-beta);
+    border: solid var(--color-eta);
+    color: var(--color-eta);
+    max-width: 60%;
+}
+
+.store {
+    background-color: var(--color-zeta);
+    padding: 60px;
+}
+
+.store__logos {
+    display: flex;
+    justify-content: center;
+}
+
+.applab {
+    background-color: var(--color-epsilon);
+    color:var(--color-rho);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.applab__item {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item__title {
+    margin: 0;
+}
+
+.item__socialmedia-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    align-items: center;
+    background-color: var(--color-gamma);
+    border-radius: 50px;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+}
+
+.footer {
+    align-items: center;
+    background-color: var(--color-sigma);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer__link {
+    color: var(--color-zeta);
+}
+
+@media (min-width: 600px) {
+    .main-content, .advantages, .features, .review,.applab , .footer {
+        padding: 50px;
+    }
+
+    .main-content {
+        display: flex;
+        margin-bottom: 90px;
+    }
+
+    .main-content__phone {
+        margin-top: 20px;
+        width: 50%;
+    }
+
+    .advantages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+
+    .adantages__title {
+        width: 100%;
+    }
+    
+    .advantages__icons
+    {
+        display: flex;
+    }
+    
+    .icon__title {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .features {
+        display: flex;
+        gap: 10%
+    }
+    
+    .features__background{
+        align-self: center;
+        width: 50%;
+    }
+
+    .features__title {
+        text-align: start;
+    }
+
+    .price-plans__title {
+        text-align: center;
+    }
+
+    .store__title {
+        text-align: left;
+    }
+
+    .price-plans__items {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .items__item {
+        height: 70%;
+        width: 33%;
+    }
+
+    .items__item--2 {
+        width: 40%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .applab {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .applab__item {
+        display: flex;
+        width: calc(50% - 50px);
+    }
+}
+
+@media (min-width: 1200px ) {
+    .navigation,.main-content, .advantages, .features, .review, .price-plans__items , .store, .applab , .footer, .price-plans__title{
+        padding: 80px 50px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation__button, .navigation-desktop__logo {
+        display: block;
+    }
+    
+    .main-content {
+        flex-wrap: wrap;
+    }
+
+    .main-content__navigation-desktop {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        width: 100%;
+    }
+    
+    .menu__list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .navigation__button {
+        background-color: var(--color-eta);
+        margin: 0;
+        width: 100px;
+    }
+
+    .price-plans__title {
+        padding-bottom: 0;
+    }
+
+    .store {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .store__title {
+        width: 50%;
+    }
+
+    .applab {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .applab__item--1 {
+        width: 100%;
+    }
+}
