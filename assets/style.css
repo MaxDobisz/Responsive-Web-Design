@@ -57,11 +57,11 @@ button {
     width: 200px;
 }
 
-.navigation,.main-content, .advantages, .features, .review, .price-plans, .applab , .footer {
+.header,.main-content, .advantages, .features, .review, .price-plans, .applab , .footer {
     padding: 15px;
 }
 
-.navigation {
+.header {
     align-items: center;
     background-color: var(--color-epsilon);
     display: flex;
@@ -72,21 +72,21 @@ button {
     display: none;
 }
 
-.navigation__hamburger {
+.header__hamburger {
     border-bottom: solid var(--color-beta);
     height: 20px;
     position:relative;
     width: 30px;
 }
 
-.navigation__hamburger::before,.navigation__hamburger::after  {
+.header__hamburger::before,.header__hamburger::after  {
     border-top: solid var(--color-beta);
     content: "";
     position: absolute;
     width: 100%;
 }
 
-.navigation__hamburger::after {
+.header__hamburger::after {
     transform: translateY(8.5px);
 }
 
@@ -125,15 +125,15 @@ button {
     width: 100px;
 }
 
-.advantages__icon--1 {
+.advantages__icon--first {
     background: linear-gradient(90deg, var(--color-zeta), var(--color-eta));
 }
 
-.advantages__icon--2 {
+.advantages__icon--middle {
     background: linear-gradient(90deg, var(--color-theta), var(--color-iota));
 }
 
-.advantages__icon--3 {
+.advantages__icon--last {
     background: var(--color-kappa);
 }
 
@@ -198,27 +198,27 @@ button {
     font-weight: bold;
 }
 
-.price-tag__item-color-1 {
+.price-tag__item-color-first {
     color: var(--color-zeta);
 }
 
-.price-tag__item-color-2 {
+.price-tag__item-color-middle {
     color: var(--color-iota);
 }
 
-.price-tag__item-color-3 {
+.price-tag__item-color-last {
     color: var(--color-kappa);
 }
 
-.item__price-tag--1 {
+.item__price-tag--basic {
     background-color:var(--color-xi);
 }
 
-.item__price-tag--2 {
+.item__price-tag--team {
     background-color:var(--color-omikron);
 }
 
-.item__price-tag--3 {
+.item__price-tag--business {
     background-color:var(--color-pi);
 }
 
@@ -364,7 +364,7 @@ button {
         width: 33%;
     }
 
-    .items__item--2 {
+    .items__item--middle {
         width: 40%;
     }
 
@@ -386,11 +386,11 @@ button {
 }
 
 @media (min-width: 1200px ) {
-    .navigation,.main-content, .advantages, .features, .review, .price-plans__items , .store, .applab , .footer, .price-plans__title{
+    .header,.main-content, .advantages, .features, .review, .price-plans__items , .store, .applab , .footer, .price-plans__title{
         padding: 80px 50px;
     }
 
-    .navigation {
+    .header {
         display: none;
     }
 
@@ -440,7 +440,7 @@ button {
         flex-wrap: nowrap;
     }
 
-    .applab__item--1 {
+    .applab__item--first {
         width: 100%;
     }
 }
