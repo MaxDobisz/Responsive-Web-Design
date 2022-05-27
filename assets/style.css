@@ -6,8 +6,8 @@
     --color-epsilon: rgb(49, 49, 49);
     --color-zeta: rgb(3, 130, 245);
     --color-eta: rgb(90, 177, 255);
-    --color-theta: rgba(253,172,92,1);
-    --color-iota: rgba(253,143,94,1);
+    --color-theta: rgba(253, 172, 92, 1);
+    --color-iota: rgba(253, 143, 94, 1);
     --color-kappa: rgb(55, 239, 141);
     --color-lambda: rgba(106, 182, 251, 0.9);
     --color-mu: rgb(255, 215, 0);
@@ -19,14 +19,25 @@
     --color-sigma: rgb(0, 0, 0);
 }
 
-body { 
+body {
     color: var(--color-alpha);
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
 
-a, h2, button, .store__title, .review__title, .main-content__title, .review, .store, .fa-facebook, .fa-twitter ,.fa-instagram, .main-content {
-    color:var(--color-beta);
+a,
+h2,
+button,
+.store__title,
+.review__title,
+.main-content__title,
+.review,
+.store,
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.main-content {
+    color: var(--color-beta);
 }
 
 a {
@@ -57,7 +68,14 @@ button {
     width: 200px;
 }
 
-.header,.main-content, .advantages, .features, .review, .price-plans, .applab , .footer {
+.header,
+.main-content,
+.advantages,
+.features,
+.review,
+.price-plans,
+.applab,
+.footer {
     padding: 15px;
 }
 
@@ -68,18 +86,21 @@ button {
     justify-content: space-between;
 }
 
-.menu__list, .navigation__button, .navigation-desktop__logo {
+.menu__list,
+.navigation__button,
+.navigation-desktop__logo {
     display: none;
 }
 
 .header__hamburger {
     border-bottom: solid var(--color-beta);
     height: 20px;
-    position:relative;
+    position: relative;
     width: 30px;
 }
 
-.header__hamburger::before,.header__hamburger::after  {
+.header__hamburger::before,
+.header__hamburger::after {
     border-top: solid var(--color-beta);
     content: "";
     position: absolute;
@@ -155,7 +176,7 @@ button {
 
 .review {
     background-size: cover;
-    background:linear-gradient(0deg, var(--color-lambda), var(--color-lambda)), url(../images/banner/testmonial.png);
+    background: linear-gradient(0deg, var(--color-lambda), var(--color-lambda)), url(../images/banner/testmonial.png);
     text-align: center;
     background-position: center;
 }
@@ -174,7 +195,8 @@ button {
     padding-right: 5px;
 }
 
-.price-plans__title, .price-plans__items  {
+.price-plans__title,
+.price-plans__items {
     text-align: center;
 }
 
@@ -211,15 +233,15 @@ button {
 }
 
 .item__price-tag--basic {
-    background-color:var(--color-xi);
+    background-color: var(--color-xi);
 }
 
 .item__price-tag--team {
-    background-color:var(--color-omikron);
+    background-color: var(--color-omikron);
 }
 
 .item__price-tag--business {
-    background-color:var(--color-pi);
+    background-color: var(--color-pi);
 }
 
 .items__item-list {
@@ -247,7 +269,7 @@ button {
 
 .applab {
     background-color: var(--color-epsilon);
-    color:var(--color-rho);
+    color: var(--color-rho);
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -297,7 +319,13 @@ button {
 }
 
 @media (min-width: 600px) {
-    .main-content, .advantages, .features, .review,.applab , .footer {
+
+    .main-content,
+    .advantages,
+    .features,
+    .review,
+    .applab,
+    .footer {
         padding: 50px;
     }
 
@@ -315,17 +343,16 @@ button {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    } 
+    }
 
     .adantages__title {
         width: 100%;
     }
-    
-    .advantages__icons
-    {
+
+    .advantages__icons {
         display: flex;
     }
-    
+
     .icon__title {
         margin-left: 10%;
         margin-right: 10%;
@@ -335,8 +362,8 @@ button {
         display: flex;
         gap: 10%
     }
-    
-    .features__background{
+
+    .features__background {
         align-self: center;
         width: 50%;
     }
@@ -385,8 +412,18 @@ button {
     }
 }
 
-@media (min-width: 1200px ) {
-    .header,.main-content, .advantages, .features, .review, .price-plans__items , .store, .applab , .footer, .price-plans__title{
+@media (min-width: 1200px) {
+
+    .header,
+    .main-content,
+    .advantages,
+    .features,
+    .review,
+    .price-plans__items,
+    .store,
+    .applab,
+    .footer,
+    .price-plans__title {
         padding: 80px 50px;
     }
 
@@ -394,10 +431,11 @@ button {
         display: none;
     }
 
-    .navigation__button, .navigation-desktop__logo {
+    .navigation__button,
+    .navigation-desktop__logo {
         display: block;
     }
-    
+
     .main-content {
         flex-wrap: wrap;
     }
@@ -409,7 +447,7 @@ button {
         margin-bottom: 100px;
         width: 100%;
     }
-    
+
     .menu__list {
         display: flex;
         gap: 40px;
